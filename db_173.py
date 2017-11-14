@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 '''
-	Developer: Fergus W. Clare
-	Contact: fergusclare@gmail.com
-	Course: CSC387 - Foundations of Computer Science
-	University: University of Illinois Springfield 
+	Developer: Fergus Clare
 	Last Updated: November 13th, 2017
 	License: MIT
 	Required Libraries: peewee (pip3 install peewee) http://peewee.readthedocs.io/en/latest/peewee/querying.html
@@ -14,7 +11,6 @@ from peewee import *
 db = SqliteDatabase('db387_173.db')
 
 class Employee(Model):
-	'''represents single object in db'''
 	#define all of the values for the employee table
 	empid = CharField(max_length = 225)
 	empname = CharField(max_length = 225)
